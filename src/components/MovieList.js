@@ -1,14 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import MovieListItem from './MovieListItem';
 import MovieFooter from './MovieFooter';
-import FavoriteMovieList from './FavoriteMovieList';
+
 
 const MovieList = (props) => {
-  const { movies, favoriteMovies } = props;
+  const { movies,  } = props;
 
   return (
     <div className="col">
+      <Link to="/movies/add">Add Movie</Link>
       <table className="table table-striped table-hover">
         <thead>
           <tr>
